@@ -7,6 +7,7 @@ import com.typesafe.sbt.packager.Keys._
 
 object PlayArtifact extends Plugin {
 
+
   val playArtifact = TaskKey[File]("play-artifact", "Builds a deployable zip file for magenta")
   val playArtifactResources = TaskKey[Seq[(File, String)]](
     "play-artifact-resources", "Files that will be collected by the deployment-artifact task")
